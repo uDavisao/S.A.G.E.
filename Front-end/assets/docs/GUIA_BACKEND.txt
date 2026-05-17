@@ -1,0 +1,125 @@
+GUIA DE INTEGRAÇÃO BACK-END / SQL
+
+1. LOGIN
+
+Arquivo:
+login.html
+
+Formulário:
+#loginForm
+
+Rota sugerida:
+POST /auth/login
+
+Campos:
+email
+password
+
+2. DASHBOARD
+
+Arquivo:
+index.html
+
+Pontos de preenchimento:
+[data-total-parts]
+[data-low-stock]
+[data-total-value]
+[data-today-moves]
+[data-low-stock-table]
+[data-os-table]
+
+Rota sugerida:
+GET /dashboard
+
+3. ESTOQUE
+
+Arquivo:
+estoque.html
+
+Tabela:
+[data-stock-table]
+
+Contador:
+[data-catalog-count]
+
+Formulário:
+data-sage-form="part"
+
+Rota sugerida:
+POST /parts
+
+Campos:
+name
+sku
+category
+brand
+supplier
+cost_price
+unit_price
+quantity
+minimum_quantity
+location
+
+4. MOVIMENTAÇÕES
+
+Arquivo:
+movimentacoes.html
+
+Tabela:
+[data-movements-table]
+
+Entrada:
+data-sage-form="entry"
+POST /movements/entry
+
+Campos:
+part_id
+quantity
+movement_date
+reason
+supplier
+
+Saída:
+data-sage-form="exit"
+POST /movements/exit
+
+Campos:
+part_id
+quantity
+movement_date
+reason
+service_order
+
+5. RELATÓRIOS
+
+Arquivo:
+relatorios.html
+
+Pontos:
+#movement-chart-root
+#capital-chart-root
+[data-report-models]
+[data-report-volume]
+[data-report-ticket]
+
+Rota sugerida:
+GET /reports
+
+6. CONFIGURAÇÕES
+
+Arquivo:
+configuracoes.html
+
+Formulários:
+data-sage-form="backup"
+data-sage-form="company"
+data-sage-form="team"
+
+Tabela:
+[data-team-table]
+
+Rotas sugeridas:
+GET /settings
+POST /settings/backup
+POST /settings/company
+POST /team
