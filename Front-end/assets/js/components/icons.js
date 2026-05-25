@@ -1,5 +1,5 @@
 const SageIcons = {
-    wrench: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14.7 6.3a4.8 4.8 0 0 0 5.6 5.6L10.8 21.4a2.7 2.7 0 0 1-3.8 0l-.4-.4a2.7 2.7 0 0 1 0-3.8l9.5-9.5Z"/><path d="m17 4 3 3"/></svg>',
+    wrench: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 7a4 4 0 0 0 5 5l-9 9a2 2 0 0 1-3-3l9-9a4 4 0 0 0-2-2Z"stroke-linecap="round"stroke-linejoin="round"/></svg>`,
     dashboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 13h6V4H4v9Z"/><path d="M14 20h6V4h-6v16Z"/><path d="M4 20h6v-3H4v3Z"/></svg>',
     box: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.5 8-4.5"/><path d="M12 12v9"/></svg>',
     arrows: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 7h12l-3-3"/><path d="M17 17H5l3 3"/><path d="m19 7-3 3"/><path d="m5 17 3-3"/></svg>',
