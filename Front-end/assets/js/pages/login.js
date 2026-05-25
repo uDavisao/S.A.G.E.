@@ -28,26 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     form?.addEventListener("submit", (event) => {
-        if (form.dataset.backendActive === "true") return;
-
-        event.preventDefault();
 
         const email = form.email.value.trim();
         const password = form.password.value.trim();
 
-        if (!email || !password) {
+     if (!email || !password) {
+
+         event.preventDefault();
+
             if (feedback) {
-                feedback.classList.add("is-visible");
+                eedback.classList.add("is-visible");
                 feedback.textContent = "Preencha o e-mail e a senha para continuar.";
             }
-            return;
+
+         return;
         }
 
         if (feedback) {
             feedback.classList.remove("is-visible");
             feedback.textContent = "";
         }
-
-        window.location.href = "index.html";
-    });
+    }); 
 });
